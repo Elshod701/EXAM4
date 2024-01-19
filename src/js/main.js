@@ -122,8 +122,6 @@ function RenderIDInput(data) {
     `
 }
 
-
-
 const wrapper_korzinka = document.querySelector("#korzinka_uchun_wrapper");
 const count_red = document.getElementById("count-red");
 const count = document.getElementById("count");

@@ -6,9 +6,9 @@ const singlePrice = document.querySelector("#single-product-price")
 const singleDescription = document.querySelector("#single-product-description")
 const singleCatName = document.querySelector("#single-product-category-name")
 const card_id = document.querySelector("#card_id")
-// fetch(`https://fakestoreapi.com/products/${product_id}`)
-    // .then(res => res.json())
-    // .then(data => Render_Single_Product(data))
+fetch(`https://fakestoreapi.com/products/${product_id}`)
+    .then(res => res.json())
+    .then(data => Render_Single_Product(data))
 
 function Render_Single_Product(singleProductData) {
     singleImage.src = singleProductData.image;
