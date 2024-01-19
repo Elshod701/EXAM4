@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXAM</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="stylesheet" href="./output.css" />
+  <!-- box icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body id="body">
+  <header>
+    <div class="container">
+      <div class="header-top flex items-center py-4 justify-between">
+        <div class="header-top-left">
+          <select name="eng" id="eng" class="bg-transparent">
+            <option value="EN" selected>EN</option>
+            <option value="RU">RU</option>
+            <option value="UZ">UZ</option>
+          </select>
+          <select name="valyuta" id="valyuta">
+            <option value="USD">USD</option>
+            <option value="UZS">UZS</option>
+          </select>
+        </div>
+        <div class="header-top-right flex items-center gap-5">
+          <div class="login flex gap-1 items-center cursor-pointer">
+            <i class="bx bxs-user text-xl" style="color: #0f0e0e"></i>
+            <p class="text-xl font-Poppins-regular">My profile</p>
+          </div>
+          <a href="./korzinka.html">
+            <div class="cart flex gap-1 items-center cursor-pointer relative">
+              <i class="bx bx-cart text-4xl"></i>
+              <a href="./korzinka.html">
+                <p class="text-xl font-Poppins-regular">Items</p>
+              </a>
+              <i id="count-red" class='bx bxs-circle absolute text-2xl top-[0%] left-[14px]' style='color:#f70c0c'>
+                <p id="count" class="absolute text-white top-[-2px] left-[9px] text-base ">3</p>
+              </i>
+            </div>
+          </a>
+          <div class="total flex gap-1 items-center">
+            <p id="mainTotalPrice" class="font-Poppins-regular text-gray-500">
+              $0.00
+            </p>
+            <i class="bx bx-search-alt-2 text-2xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot py-5 flex items-center justify-between">
+        <div class="logo">
+          <a href="#" class="flex gap-[6px] items-center">
+            <img src="./assets/images/logo.svg" alt="logo" />
+            <p class="text-xl font-Poppins-bold">E-Comm</p>
+          </a>
+        </div>
+        <ul class="font-Poppins-medium text-[24px] flex gap-[97px]">
+          <li class="hover:text-[#40BFFF]">HOME</li>
+          <li class="hover:text-[#40BFFF]">BAGS</li>
+          <li class="hover:text-[#40BFFF]">SNEAKERS</li>
+          <li class="hover:text-[#40BFFF]">BELT</li>
+          <li class="hover:text-[#40BFFF]">CONTACT</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="section-1" class="h-[654px] mt-[144px]">
+      <div class="container">
+        <h1 class="font-Poppins-bold text-[64px] text-white w-[574px] pt-[258px]">
+          Super Flash Sale 50% Off
+        </h1>
+      </div>
+    </section>
+
+    <section id="section-2">
+      <div class="container">
+        <div class="card-wrapper rounded-[10px] flex items-center w-[1250px] mt-[-100px] bg-white">
+          <div id="card" class="h-[360px] w-[420px] hover:bg-[#F2F2F2] py-[30px] px-[50px]">
+            <div class="flex items-start justify-between">
+              <h3 class="font-Poppins-bold text-[20px] w-[180px] h-[60px]">
+                FS - QUILTED MAXI CROSS BAG
+              </h3>
+              <h1 class="font-Poppins-bold text-[30px] text-[#40BFFF]">
+                $299,43
+              </h1>
+            </div>
+            <img class="h-[190px] object-cover object-center bg-green-400 rounded-xl block mx-auto"
+              src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" />
+            <div class="sale flex items-center justify-center gap-4 pt-7 mx-auto w-[100%]">
+              <p class="text-[#9098B1] font-lg font-Poppins-regular">
+                $534,33
+              </p>
+              <p class="text-[#FB7181] font-Poppins-bold text-lg">24% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section_3">
+      <div class="container">
+        <div class="wrapper pt-[65px] mb-[52px]">
+          <h2 class="text-[35px] font-Poppins-medium text-center mb-[30px]">
+            BEST SELLER
+          </h2>
+          <div class="list_wrapper flex w-[627px] mx-auto justify-between mb-5">
+            lorem
+          </div>
+          <div class="box 0 pt-6 flex justify-between flex-wrap mb-[30px]">
+            <div class="card w-[300px] h-[398px] bg-white rounded-[5px]">
+              <img class="card_img object-cover object-fit w-[300px] rounded-[5px]" src="./assets/images/static.img.svg"
+                alt="" />
+              <h3 class="card_title pt-[10px] text-center font-Poppins-bold text-xl">
+                Nike Air Max 270 React
+              </h3>
+              <img class="card_rating block mx-auto pt-[10px]" src="./assets/images/stars.svg" alt="" />
+              <div class="flex gap-10 items-center justify-center pt-2">
+                <p class="font-Poppins-bold text-xl text-[#40BFFF]">
+                  $299,33
+                </p>
+                <strike class="text-base text-[#9098B1] font-Poppins-regular">$534,33</strike>
+                <p class="text-base text-[#FB7181] font-Poppins-bold">24%</p>
+              </div>
+            </div>
+            <div class="card w-[300px] h-[398px] bg-white rounded-[5px]">
+              <img class="card_img object-cover object-fit w-[300px] rounded-[5px]" src="./assets/images/static.img.svg"
+                alt="" />
+              <h3 class="card_title pt-[10px] text-center font-Poppins-bold text-xl">
+                Nike Air Max 270 React
+              </h3>
+              <img class="card_rating block mx-auto pt-[10px]" src="./assets/images/stars.svg" alt="" />
+              <div class="flex gap-10 items-center justify-center pt-2">
+                <p class="font-Poppins-bold text-xl text-[#40BFFF]">
+                  $299,33
+                </p>
+                <strike class="text-base text-[#9098B1] font-Poppins-regular">$534,33</strike>
+                <p class="text-base text-[#FB7181] font-Poppins-bold">24%</p>
+              </div>
+            </div>
+            <div class="card w-[300px] h-[398px] bg-white rounded-[5px]">
+              <img class="card_img object-cover object-fit w-[300px] rounded-[5px]" src="./assets/images/static.img.svg"
+                alt="" />
+              <h3 class="card_title pt-[10px] text-center font-Poppins-bold text-xl">
+                Nike Air Max 270 React
+              </h3>
+              <img class="card_rating block mx-auto pt-[10px]" src="./assets/images/stars.svg" alt="" />
+              <div class="flex gap-10 items-center justify-center pt-2">
+                <p class="font-Poppins-bold text-xl text-[#40BFFF]">
+                  $299,33
+                </p>
+                <strike class="text-base text-[#9098B1] font-Poppins-regular">$534,33</strike>
+                <p class="text-base text-[#FB7181] font-Poppins-bold">24%</p>
+              </div>
+            </div>
+            <div class="card w-[300px] h-[398px] bg-white rounded-[5px]">
+              <img class="card_img object-cover object-fit w-[300px] rounded-[5px]" src="./assets/images/static.img.svg"
+                alt="" />
+              <h3 class="card_title pt-[10px] text-center font-Poppins-bold text-xl">
+                Nike Air Max 270 React
+              </h3>
+              <img class="card_rating block mx-auto pt-[10px]" src="./assets/images/stars.svg" alt="" />
+              <div class="flex gap-10 items-center justify-center pt-2">
+                <p class="font-Poppins-bold text-xl text-[#40BFFF]">
+                  $299,33
+                </p>
+                <strike class="text-base text-[#9098B1] font-Poppins-regular">$534,33</strike>
+                <p class="text-base text-[#FB7181] font-Poppins-bold">24%</p>
+              </div>
+            </div>
+          </div>
+          <a href="">
+            <p id="load_more" class="text-center font-Poppins-medium text-[20px] text-[#33A0FF] pb-1">
+              Load more
+            </p>
+          </a>
+
+          <div class="static-adds mt-[120px] flex justify-between items-start w-[1092px] mx-auto">
+            <div class="flex flex-col justify-between w-[200px] h-[162px]">
+              <img class="w-[140px] mx-auto" src="./assets/images/gruz.svg" alt="" />
+              <h1 class="font-Poppins-bold text-[27px] text-center">
+                FREE SHIPPING
+              </h1>
+            </div>
+            <div class="flex flex-col justify-between w-[200px] h-[162px]">
+              <img class="w-[90px] mx-auto" src="./assets/images/redollar.svg" alt="" />
+              <h1 class="font-Poppins-bold text-[27px] text-center">
+                100% REFUND
+              </h1>
+            </div>
+            <div class="flex flex-col justify-between w-[200px] h-[162px]">
+              <img class="w-[70px] mx-auto" src="./assets/images/operator.svg" alt="" />
+              <h1 class="font-Poppins-bold text-[27px] text-center">
+                SUPPORT 24/7
+              </h1>
+            </div>
+          </div>
+
+          <form id="form" action="#"
+            class="mt-[100px] flex border-[#BCDDFE] border-[3px] w-[600px] justify-between mx-auto">
+            <input id="input" type="number" placeholder="ID bo'yicha chiqarish..."
+              class="px-[22px] py-[14px] border-1 w-[470px]" />
+            <button
+              class="bg-[#40BFFF] text-white text-xl font-Poppins-semibold px-[27.5px] py-[14px] flex items-center justify-center">
+              Search
+            </button>
+          </form>
+          <div class="input_res mx-auto flex items-center justify-center"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#BCDDFE] h-[680px]">
+    <div class="container">
+      <div class="footer-wrapper py-[154px] flex items-start justify-between border-b border-white border-[6px solid]">
+        <div class="footer-1 w-[300px]">
+          <div class="logo flex gap-2 items-center mb-[23px]">
+            <img src="./assets/images/logo.svg" alt="" />
+            <h1 class="font-Poppins-bold text-[18px]">E-Comm</h1>
+          </div>
+          <p class="text-base">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever.Since the 1500s, when an unknown printer.
+          </p>
+        </div>
+        <div class="footer-2 w-[300px]">
+          <h3 class="font-Poppins-medium text-xl">Follow Us</h3>
+          <p class="text-base font-Poppins-regular mt-[40px]">
+            Since the 1500s, when an unknown printer took a galley of type and
+            scrambled.
+          </p>
+          <div class="brands flex items-start gap-5 mt-[20px]">
+            <img class="w-[20px]" src="./assets/images/facebook.svg" alt="" />
+            <img class="w-[50px]" src="./assets/images/twitter.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer-3 w-[150px]">
+          <h3 class="text-xl font-Poppins-medium mb-[40px]">Contact Us</h3>
+          <p>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+        </div>
+      </div>
+      <span class="loader"></span>
+      <div class="kartalar flex float-end gap-5 mt-[30px]">
+        <img src="./assets/images/western.svg" alt="">
+        <img src="./assets/images/paypal.svg" alt="">
+        <img src="./assets/images/mastercard.svg" alt="">
+        <img src="./assets/images/visa.svg" alt="">
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

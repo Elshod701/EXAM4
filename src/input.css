@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-medium";
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 100%;
+  width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+  display: inline-block;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+select {
+  outline: none;
+  background: transparent;
+}
+
+#section-1 {
+  background-image: url("./assets/images/banner.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center center;
+}
+
+#card:hover {
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.636);
+  z-index: 1111;
+  width: 100%;
+}
+.active {
+  color: blue;
+}
+
+#load_more {
+  width: 115px;
+  display: block;
+  border-bottom: 2px solid #33a0ff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ///////////////////// */
+
+#count-red {
+  display: none;
+}
+
+#count {
+  display: none;
+}
+
+

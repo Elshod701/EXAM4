@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CART</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="stylesheet" href="./output.css" />
+  <!-- box icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top flex items-center py-4 justify-between">
+        <div class="header-top-left">
+          <select name="eng" id="eng" class="bg-transparent">
+            <option value="EN" selected>EN</option>
+            <option value="RU">RU</option>
+            <option value="UZ">UZ</option>
+          </select>
+          <select name="valyuta" id="valyuta">
+            <option value="USD">USD</option>
+            <option value="UZS">UZS</option>
+          </select>
+        </div>
+        <div class="header-top-right flex items-center gap-5">
+          <div class="login flex gap-1 items-center cursor-pointer">
+            <i class="bx bxs-user text-xl" style="color: #0f0e0e"></i>
+            <p class="text-xl font-Poppins-regular">My profile</p>
+          </div>
+          <div class="cart flex gap-1 items-center cursor-pointer relative  ">
+            <i class="bx bx-cart text-4xl"></i>
+            <a href="./korzinka.html">
+              <p class="text-xl font-Poppins-regular">Items</p>
+            </a>
+            <i id="count-red" class='bx bxs-circle absolute text-2xl top-[0%] left-[14px]' style='color:#f70c0c'>
+              <p id="count" class="absolute text-white top-[-2px] left-[9px] text-base ">3</p>
+            </i>
+          </div>
+          <div class="total flex gap-1 items-center">
+            <p id="mainTotalPrice" class="font-Poppins-regular text-gray-500">
+              $0.00
+            </p>
+            <i class="bx bx-search-alt-2 text-2xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot py-5 flex items-center justify-between">
+        <div class="logo">
+          <a href="#" class="flex gap-[6px] items-center">
+            <img src="./assets/images/logo.svg" alt="logo" />
+            <p class="text-xl font-Poppins-bold">E-Comm</p>
+          </a>
+        </div>
+        <ul class="font-Poppins-medium text-[24px] flex gap-[97px]">
+          <a href="./index.html">
+            <li class="hover:text-[#40BFFF]">HOME</li>
+          </a>
+          <li class="hover:text-[#40BFFF]">BAGS</li>
+          <li class="hover:text-[#40BFFF]">SNEAKERS</li>
+          <li class="hover:text-[#40BFFF]">BELT</li>
+          <li class="hover:text-[#40BFFF]">CONTACT</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container relative">
+    <h1 class="text-center font-Poppins-semibold text-[40px] mt-[144px] py-4">
+      ABOUT PAGE
+    </h1>
+    <a href="./index.html">
+      <i class="bx bx-arrow-back text-4xl p-2 rounded-2xl absolute top-[20px] hover:bg-slate-300"
+        style="color: #0f0d0d"></i>
+    </a>
+    <div id="about_Page" class="w-[100%] px-[20px] pt-[40px] flex gap-[70px]">
+      <img id="single-product-image" src="https://freepngimg.com/thumb/categories/627.png"
+        class="w-[300px] object-contain object-center" alt="" />
+      <div class="mt-[40px]">
+        <strong id="card_id">ID: </strong>
+        <h1 id="single-product-category-name" class="mb-2 text-2xl">
+          <strong>Category:</strong>
+        </h1>
+        <p class="text-2xl mb-2" id="single-product-title">
+          <strong>Title:</strong>
+        </p>
+        <p id="single-product-price" class="uppercase text-2xl mb-2">
+          <strong>Price: </strong>
+        </p>
+        <i id="single-product-description" class="">
+          <strong>Description:</strong>
+        </i>
+        <img class="mt-[10px]" src="./assets/images/stars.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-[#BCDDFE] h-[680px] mt-[50px]">
+    <div class="container">
+      <div class="footer-wrapper py-[154px] flex items-start justify-between border-b border-white border-[6px solid]">
+        <div class="footer-1 w-[300px]">
+          <div class="logo flex gap-2 items-center mb-[23px]">
+            <img src="./assets/images/logo.svg" alt="" />
+            <h1 class="font-Poppins-bold text-[18px]">E-Comm</h1>
+          </div>
+          <p class="text-base">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever.Since the 1500s, when an unknown printer.
+          </p>
+        </div>
+        <div class="footer-2 w-[300px]">
+          <h3 class="font-Poppins-medium text-xl">Follow Us</h3>
+          <p class="text-base font-Poppins-regular mt-[40px]">
+            Since the 1500s, when an unknown printer took a galley of type and
+            scrambled.
+          </p>
+          <div class="brands flex items-start gap-5 mt-[20px]">
+            <img class="w-[20px]" src="./assets/images/facebook.svg" alt="" />
+            <img class="w-[50px]" src="./assets/images/twitter.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer-3 w-[150px]">
+          <h3 class="text-xl font-Poppins-medium mb-[40px]">Contact Us</h3>
+          <p>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+        </div>
+      </div>
+      <span class="loader"></span>
+      <div class="kartalar flex float-end gap-5 mt-[30px]">
+        <img src="./assets/images/western.svg" alt="" />
+        <img src="./assets/images/paypal.svg" alt="" />
+        <img src="./assets/images/mastercard.svg" alt="" />
+        <img src="./assets/images/visa.svg" alt="" />
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/product.js"></script>
+
+</html>

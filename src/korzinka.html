@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CART</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <!-- box icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top flex items-center py-4 justify-between">
+                <div class="header-top-left">
+                    <select name="eng" id="eng" class="bg-transparent">
+                        <option value="EN" selected>EN</option>
+                        <option value="RU">RU</option>
+                        <option value="UZ">UZ</option>
+                    </select>
+                    <select name="valyuta" id="valyuta">
+                        <option value="USD">USD</option>
+                        <option value="UZS">UZS</option>
+                    </select>
+                </div>
+                <div class="header-top-right flex items-center gap-5">
+                    <div class="login flex gap-1 items-center cursor-pointer">
+                        <i class="bx bxs-user text-xl" style="color: #0f0e0e"></i>
+                        <p class="text-xl font-Poppins-regular">My profile</p>
+                    </div>
+                    <div class="cart flex gap-1 items-center cursor-pointer relative  ">
+                        <i class="bx bx-cart text-4xl"></i>
+                        <a href="./korzinka.html">
+                            <p class="text-xl font-Poppins-regular">Items</p>
+                        </a>
+                        <i id="count-red" class='bx bxs-circle absolute text-2xl top-[0%] left-[14px]'
+                            style='color:#f70c0c'>
+                            <p id="count" class="absolute text-white top-[-2px] left-[9px] text-base ">3</p>
+                        </i>
+                    </div>
+                    <div class="total flex gap-1 items-center">
+                        <p id="mainTotalPrice" class="font-Poppins-regular text-gray-500">
+                            $0.00
+                        </p>
+                        <i class="bx bx-search-alt-2 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bot py-5 flex items-center justify-between">
+                <div class="logo">
+                    <a href="#" class="flex gap-[6px] items-center">
+                        <img src="./assets/images/logo.svg" alt="logo" />
+                        <p class="text-xl font-Poppins-bold">E-Comm</p>
+                    </a>
+                </div>
+                <ul class="font-Poppins-medium text-[24px] flex gap-[97px]">
+                    <a href="./index.html">
+                        <li class="hover:text-[#40BFFF]">HOME</li>
+                    </a>
+                    <li class="hover:text-[#40BFFF]">BAGS</li>
+                    <li class="hover:text-[#40BFFF]">SNEAKERS</li>
+                    <li class="hover:text-[#40BFFF]">BELT</li>
+                    <li class="hover:text-[#40BFFF]">CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="wrapper_korzinka mt-[164px] w-[1256px] h-[479px] mx-auto">
+            <div class="flex items-center justify-between px-[20px] pb-[12px] border-b border-b-solid ">
+                <h2 class="text-xl font-Poppins-medium">PRODUCTS</h2>
+                <div class="flex justify-between w-[500px]">
+                    <h2 class="text-xl font-Poppins-medium">PRICE</h2>
+                    <h2 class="text-xl font-Poppins-medium">QTY</h2>
+                    <h2 class="text-xl font-Poppins-medium">USER PRICE</h2>
+                </div>
+            </div>
+            <div id="korzinka_uchun_wrapper" class="h-auto p-2 gap-6 flex flex-col">
+                <div class="item-1 flex gap-4 items-center shadow-xl p-2">
+                    <i class='bx bx-x p-1 text-xl rounded-full bg-red-200 cursor-pointer hover:bg-red-400 '
+                        style='color:#5d0000'></i>
+                    <img id="korzinka_item_image" src="./assets/images/Product Image.png" alt="">
+                    <p id="korzinka_item_title" class="text=xl font-Poppins-regular block w-[550px]">Nike Airmax 270
+                        react</p>
+                    <div class="ml-[302px] w-[100%]  flex justify-between items-center">
+                        <p class="text=xl font-Poppins-regular">8$</p>
+                        <div class="w-[85px] flex justify-between text-base bg-[#F6F7F8] items-center px-2">
+                            <button class="text-blue-500 text-2xl">+</button>
+                            <span class="text-xl font-Poppins-semibold">2</span>
+                            <button class="text-blue-500 text-2xl">-</button>
+                        </div>
+                        <p id="korzinka_userprice" class="text=xl font-Poppins-regular pr-[50px]">$4</p>
+                    </div>
+                </div>
+                <div class="item-1 flex gap-4 items-center shadow-xl p-2">
+                    <i class='bx bx-x p-1 text-xl rounded-full bg-red-200 cursor-pointer hover:bg-red-400 '
+                        style='color:#5d0000'></i>
+                    <img id="korzinka_item_image" src="./assets/images/Product Image.png" alt="">
+                    <p id="korzinka_item_title" class="text=xl font-Poppins-regular block w-[550px]">Nike Airmax 270
+                        react</p>
+                    <div class="ml-[302px] w-[100%]  flex justify-between items-center">
+                        <p class="text=xl font-Poppins-regular">8$</p>
+                        <div class="w-[85px] flex justify-between text-base bg-[#F6F7F8] items-center px-2">
+                            <button class="text-blue-500 text-2xl">+</button>
+                            <span class="text-xl font-Poppins-semibold">2</span>
+                            <button class="text-blue-500 text-2xl">-</button>
+                        </div>
+                        <p id="korzinka_userprice" class="text=xl font-Poppins-regular pr-[50px]">$4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#BCDDFE] h-[680px] mt-[50px]">
+        <div class="container">
+            <div
+                class="footer-wrapper py-[154px] flex items-start justify-between border-b border-white border-[6px solid]">
+                <div class="footer-1 w-[300px]">
+                    <div class="logo flex gap-2 items-center mb-[23px]">
+                        <img src="./assets/images/logo.svg" alt="" />
+                        <h1 class="font-Poppins-bold text-[18px]">E-Comm</h1>
+                    </div>
+                    <p class="text-base">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever.Since the 1500s, when an unknown printer.
+                    </p>
+                </div>
+                <div class="footer-2 w-[300px]">
+                    <h3 class="font-Poppins-medium text-xl">Follow Us</h3>
+                    <p class="text-base font-Poppins-regular mt-[40px]">
+                        Since the 1500s, when an unknown printer took a galley of type and
+                        scrambled.
+                    </p>
+                    <div class="brands flex items-start gap-5 mt-[20px]">
+                        <img class="w-[20px]" src="./assets/images/facebook.svg" alt="" />
+                        <img class="w-[50px]" src="./assets/images/twitter.svg" alt="" />
+                    </div>
+                </div>
+                <div class="footer-3 w-[150px]">
+                    <h3 class="text-xl font-Poppins-medium mb-[40px]">Contact Us</h3>
+                    <p>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+                </div>
+            </div>
+            <div class="kartalar flex float-end gap-5 mt-[30px]">
+                <img src="./assets/images/western.svg" alt="" />
+                <img src="./assets/images/paypal.svg" alt="" />
+                <img src="./assets/images/mastercard.svg" alt="" />
+                <img src="./assets/images/visa.svg" alt="" />
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/korzin.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
